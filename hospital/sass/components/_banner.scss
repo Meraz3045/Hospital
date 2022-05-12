@@ -1,0 +1,46 @@
+@import '../mixins/mixins';
+@import '../variables/variables';
+
+/*=============================================================
+                    Banner part start
+===============================================================*/
+#banner{
+    padding: 80px 0;
+    .container{
+        .banner_text{
+            h2{
+                @include fs($head, 36px, 400, $fhead);
+            }
+
+            h1{
+                @include fs($head, 48px, 500, $fhead);
+                font-style: italic;
+                margin-bottom: 17px;
+                margin-left: -10px;
+            }
+
+            p{
+                @include fs($head, 16px, 400, $fhead);
+                margin-bottom: 40px;
+                line-height: 24px;
+                span{
+                    display: block;
+                }
+            }
+
+            a{
+                @include fs(#fff, 18px, 500, $fhead);
+                padding: 6px 22px;
+                background: #92c7a3;
+                border-radius: 50px;
+                transition: all linear .4s;
+                &:hover{
+                    background: $head;
+                }
+            }
+        }
+    }
+}
+/*=============================================================
+                    Banner part end
+===============================================================*/

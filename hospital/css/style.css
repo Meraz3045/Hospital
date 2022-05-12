@@ -1,0 +1,833 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@font-face {
+  font-family: 'myriad_pro regular';
+  src: url(../../myriad_pro/MYRIADPRO-REGULAR.OTF);
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============================================================
+                    Banner part start
+===============================================================*/
+#banner {
+  padding: 80px 0;
+}
+
+#banner .container .banner_text h2 {
+  color: #215a6d;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+#banner .container .banner_text h1 {
+  color: #215a6d;
+  font-size: 48px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  margin-bottom: 17px;
+  margin-left: -10px;
+}
+
+#banner .container .banner_text p {
+  color: #215a6d;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 40px;
+  line-height: 24px;
+}
+
+#banner .container .banner_text p span {
+  display: block;
+}
+
+#banner .container .banner_text a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  padding: 6px 22px;
+  background: #92c7a3;
+  border-radius: 50px;
+  -webkit-transition: all linear .4s;
+  transition: all linear .4s;
+}
+
+#banner .container .banner_text a:hover {
+  background: #215a6d;
+}
+
+/*=============================================================
+                    Banner part end
+===============================================================*/
+/*=============================================================
+                    Header part start
+===============================================================*/
+#head {
+  padding: 10px 0;
+}
+
+#head .container .header_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#head .container .header_row .header_img ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#head .container .header_row .header_img ul li {
+  padding-left: 20px;
+  line-height: 86px;
+}
+
+#head .container .header_row .header_img ul li h2 {
+  color: #215a6d;
+  font-size: 26px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+
+#head .container .header_row .header_txt {
+  line-height: 86px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#head .container .header_row .header_txt h2 {
+  color: #3ca2a2;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*=============================================================
+                    Header part end
+===============================================================*/
+/*=============================================================
+                    Menu part start
+===============================================================*/
+.menu {
+  padding: 18px 0 16px;
+  background: #cf0511;
+}
+.menu_fix{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.menu .container .menu_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .container .menu_row .main_menu {
+  width: 88%;
+}
+
+.menu .container .menu_row .main_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu .container .menu_row .main_menu ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  padding: 18px 20px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.menu .container .menu_row .main_menu ul li a:hover {
+  background: #f18c25;
+  padding: 18px 20px 22.5px;
+}
+
+.menu .container .menu_row .menu_icon {
+  width: 12%;
+}
+
+.menu .container .menu_row .menu_icon a {
+  color: red;
+  line-height: 26px;
+  margin-left: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.menu .container .menu_row .menu_icon a:hover::after {
+  background: #215a6d;
+}
+
+.menu .container .menu_row .menu_icon a::after {
+  position: absolute;
+  content: '';
+  left: -4px;
+  top: -3px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+/*=============================================================
+                    Menu part end
+===============================================================*/
+/*=============================================================
+                    Banner part start
+===============================================================*/
+#about {
+  padding: 40px 0 68px;
+}
+
+#about .container .about_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#about .container .about_row .about_col {
+  width: 30%;
+  text-align: center;
+}
+
+#about .container .about_row .about_col h2 {
+  color: #3ca2a2;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 18px;
+}
+
+#about .container .about_row .about_col img {
+  width: 140px;
+}
+
+#about .container .about_row .about_col p {
+  margin-top: 10px;
+  color: #215a6d;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+
+#about .container .about_row .about_col .copy {
+  width: 15px;
+}
+
+#about .container .about_row .about_col a {
+  color: #92c7a3;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: all linear .4s;
+  transition: all linear .4s;
+}
+
+#about .container .about_row .about_col a:hover {
+  color: #cf0511;
+}
+
+/*=============================================================
+                    Banner part end
+===============================================================*/
+/*=============================================================
+                    Notice part start
+===============================================================*/
+#notice {
+  padding: 30px 0;
+}
+
+#notice .container .notice_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#notice .container .notice_row .notice_col {
+  width: 47%;
+}
+
+#notice .container .notice_row .notice_col h2 {
+  color: #215a6d;
+  font-size: 29px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+#notice .container .notice_row .notice_col h2::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+
+#notice .container .notice_row .notice_col h2::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -4px;
+  width: 54px;
+  height: 1px;
+  background: #cf0511;
+  z-index: 1;
+}
+
+#notice .container .notice_row .notice_col .copy {
+  width: 25px;
+}
+
+#notice .container .notice_row .notice_col .link {
+  color: #cf0511;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#notice .container .notice_row .notice_col .link:hover {
+  color: #215a6d;
+}
+
+#notice .container .notice_row .notice_col .col_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 14px;
+  background: #fff;
+  position: relative;
+}
+
+#notice .container .notice_row .notice_col .col_txt .txt p {
+  color: #3ca2a2;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+
+#notice .container .notice_row .notice_col .col_txt .txt::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #5bbfcf;
+}
+
+#notice .container .notice_row .notice_col .col_txt .txt::before {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  width: 52px;
+  height: 49px;
+  background: #cf0511;
+}
+
+#notice .container .notice_row .notice_col .col_txt a {
+  color: #fff;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#notice .container .notice_row .notice_col .col_txt a:hover {
+  color: #215a6d;
+}
+
+#notice .container .notice_row .notice_col .col_txt .icon {
+  z-index: 1;
+  margin-right: 7px;
+}
+
+#notice .container .notice_row .notice_col .col_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+  padding: 14px;
+  background: #fff;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#notice .container .notice_row .notice_col .col_text p {
+  color: #3ca2a2;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+
+#notice .container .notice_row .notice_col .col_text::before {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  width: 52px;
+  height: 49px;
+  background: #cf0511;
+}
+
+#notice .container .notice_row .notice_col .col_text .icon {
+  color: #fff;
+  z-index: 1;
+  margin-right: 7px;
+}
+
+#notice .container .notice_row .notice_col .col_text a {
+  color: #fff;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#notice .container .notice_row .notice_col .col_text a:hover {
+  color: #215a6d;
+}
+
+#notice .container .notice_row .notice_col img {
+  width: 100%;
+  max-width: 100%;
+  padding: 6px;
+}
+
+/*=============================================================
+                    Notice part end
+===============================================================*/
+/*=============================================================
+                    Service part start
+===============================================================*/
+#service {
+  padding: 60px 0;
+}
+
+#service .container .service_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#service .container .service_row .service_col {
+  width: 30%;
+}
+
+#service .container .service_row .service_col h2 {
+  color: #215a6d;
+  font-size: 29px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+#service .container .service_row .service_col h2::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background: #eaeaea;
+}
+
+#service .container .service_row .service_col h2::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -5px;
+  width: 54px;
+  height: 1px;
+  background: #cf0511;
+  z-index: 1;
+}
+
+#service .container .service_row .service_col h4 {
+  color: #3ca2a2;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+#service .container .service_row .service_col .lol {
+  position: relative;
+  margin-top: 32px;
+}
+
+#service .container .service_row .service_col .lol::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: -15px;
+  width: 100%;
+  height: 1px;
+  background: #eaeaea;
+}
+
+#service .container .service_row .service_col p {
+  color: #215a6d;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+#service .container .service_row .service_col a {
+  color: #215a6d;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#service .container .service_row .service_col a:hover {
+  color: #cf0511;
+}
+
+#service .container .service_row .service_col2 {
+  width: 30%;
+}
+
+#service .container .service_row .service_col2 h2 {
+  color: #215a6d;
+  font-size: 29px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+#service .container .service_row .service_col2 h2::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background: #eaeaea;
+}
+
+#service .container .service_row .service_col2 h2::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -5px;
+  width: 54px;
+  height: 1px;
+  background: #cf0511;
+  z-index: 1;
+}
+
+#service .container .service_row .service_col2 p {
+  color: #215a6d;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+#service .container .service_row .service_col2 .last {
+  margin-bottom: 50px;
+}
+
+#service .container .service_row .service_col2 .tik {
+  color: #cf0511;
+}
+
+#service .container .service_row .service_col2 a {
+  color: #215a6d;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#service .container .service_row .service_col2 a:hover {
+  color: #cf0511;
+}
+
+#service .container .service_row .service_col2 .photo_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#service .container .service_row .service_col2 .photo_row .photo_col {
+  width: 45%;
+}
+
+#service .container .service_row .service_col2 .photo_row .photo_col .col_row {
+  margin-bottom: 15px;
+  border: 4px solid #dfece6;
+}
+
+#service .container .service_row .service_col2 .photo_row .photo_col .col_row img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*=============================================================
+                    Service part end
+===============================================================*/
+/*=============================================================
+                    Doctors part start
+===============================================================*/
+#doctors {
+  padding-bottom: 76px;
+}
+
+#doctors .container h2 {
+  color: #215a6d;
+  font-size: 29px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#doctors .container h2::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 1px;
+  background: #eaeaea;
+}
+
+#doctors .container h2::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -8px;
+  width: 54px;
+  height: 1px;
+  background: #cf0511;
+  z-index: 1;
+}
+
+#doctors .container .doctors_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#doctors .container .doctors_row .doctors_col {
+  width: 30%;
+}
+
+#doctors .container .doctors_row .doctors_col .col_img {
+  border: 5px solid #dfece6;
+}
+
+#doctors .container .doctors_row .doctors_col .col_img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#doctors .container .doctors_row .doctors_col .col_txt h4 {
+  color: #3ca2a2;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin: 16px 0 5px;
+}
+
+#doctors .container .doctors_row .doctors_col .col_txt p {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+#doctors .container .doctors_row .doctors_col .col_txt p span {
+  display: block;
+  color: #cf0511;
+  margin-top: 4px;
+}
+
+/*=============================================================
+                    Doctors part end
+===============================================================*/
+/*=============================================================
+                    Doctors part start
+===============================================================*/
+#footer {
+  padding-top: 23px;
+}
+
+#footer .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#footer .container ul li h2 {
+  color: #3ba1a1;
+  font-size: 29px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin: 30px 18px;
+}
+
+#footer .container .footer_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 44px;
+}
+
+#footer .container .footer_top .footer_top_col {
+  width: 22%;
+}
+
+#footer .container .footer_top .footer_top_col h3 {
+  color: #3ba1a1;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0 15px;
+}
+
+#footer .container .footer_top .footer_top_col .arrow {
+  color: #cf0511;
+  margin-right: 3px;
+}
+
+#footer .container .footer_top .footer_top_col p {
+  margin-top: 8px;
+}
+
+#footer .container .footer_top .footer_top_col p a {
+  color: #c6ded9;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#footer .container .footer_top .footer_top_col p a:hover {
+  color: #3ba1a1;
+}
+
+#footer .footer_bottom {
+  padding: 16px 0;
+  background: #cf0511;
+}
+
+#footer .footer_bottom p {
+  color: #c6ded9;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+/*=============================================================
+                    Doctors part end
+===============================================================*/
+/*# sourceMappingURL=style.css.map */

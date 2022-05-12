@@ -1,0 +1,71 @@
+@import '../mixins/mixins';
+@import '../variables/variables';
+
+/*=============================================================
+                    Menu part start
+===============================================================*/
+.menu{
+    padding: 18px 0 16px;
+    background: #cf0511;
+    .container{
+        .menu_row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .main_menu{
+                width: 88%;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        
+                        a{
+                            @include fs(#fff, 14px, 800, $fhead);
+                            padding: 18px 20px;
+                            transition: all linear .3s;
+                            &:hover{
+                                background: #f18c25;
+                                padding: 18px 20px 22.5px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .menu_icon{
+                width: 12%;
+                        a{
+                            color: red;
+                            line-height: 26px;
+                            margin-left: 12px;
+                            position: relative;
+                            z-index: 1;
+                            &:hover::after{
+                                background: $head;
+                                color: #fff;
+                            }
+                           &::after{
+                               @include after_lt(-4px, -3px, 25px, 25px, #fff);
+                               z-index: -1;
+                               border-radius: 50%;
+                               transition: all linear .3s;
+                           }
+                        }
+                    
+                
+            }
+        }
+    }
+}
+
+.menu_fix{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+/*=============================================================
+                    Menu part end
+===============================================================*/

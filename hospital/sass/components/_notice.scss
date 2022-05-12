@@ -1,0 +1,125 @@
+@import '../mixins/mixins';
+@import '../variables/variables';
+
+/*=============================================================
+                    Notice part start
+===============================================================*/
+#notice{
+    padding: 30px 0;
+    .container{
+        .notice_row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .notice_col{
+                width: 47%;
+
+                h2{
+                    @include fs($head, 29px, 500, $fhead);
+                    margin-bottom: 45px;
+                    position: relative;
+                    &::after{
+                        @include after_lb(0, -4px, 100%, 1px, #fff);
+                    }
+
+                    &::before{
+                        @include after_lb(0, -4px, 54px, 1px, #cf0511);
+                        z-index: 1;
+                    }
+                }
+
+                .copy{
+                        width: 25px;
+                }
+
+                .link{
+                    
+                        @include fs(#cf0511, 14px, 400, $fhead);
+                        transition: all linear .3s;
+                        &:hover{
+                            color: $head;
+                        }
+                    
+                }
+
+                .col_txt{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding: 14px;
+                    background: #fff;
+                    position: relative;
+                   .txt{
+
+                    p{
+                        @include fs(#3ca2a2, 16px, 500, $fhead);
+                    }
+                    &::after{
+                        @include after_lb(0, 0, 100%, 1px, #5bbfcf);
+                    }
+
+                    &::before{
+                        @include after_rt(0, 0, 52px, 49px, #cf0511);
+                    }
+
+                   }
+
+                   a{
+                       color: #fff;
+                       transition: all linear .3s;
+                        &:hover{
+                            color: $head;
+                        }
+                   }
+
+                    .icon{
+                        
+                        z-index: 1;
+                        margin-right: 7px;
+                        
+                    }
+                }
+
+                .col_text{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    z-index: 1;
+                    padding: 14px;
+                    background: #fff;
+                    margin-bottom: 15px;
+                    position: relative;
+                    p{
+                        @include fs(#3ca2a2, 16px, 500, $fhead);
+                    }
+                    &::before{
+                        @include after_rt(0, 0, 52px, 49px, #cf0511);
+                    }
+
+                    .icon{
+                        color: #fff;
+                        z-index: 1;
+                        margin-right: 7px;
+                    }
+
+                    a{
+                        color: #fff;
+                        transition: all linear .3s;
+                        &:hover{
+                            color: $head;
+                        }
+                    }
+                }
+
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                    padding: 6px;
+                }
+            }
+        }
+    }
+}
+/*=============================================================
+                    Notice part end
+===============================================================*/

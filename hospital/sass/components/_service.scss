@@ -1,0 +1,117 @@
+@import '../mixins/mixins';
+@import '../variables/variables';
+
+/*=============================================================
+                    Service part start
+===============================================================*/
+#service{
+    padding: 60px 0;
+    .container{
+        .service_row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .service_col{
+                width: 30%;
+                h2{
+                    @include fs($head, 29px, 500, $fhead);
+                    position: relative;
+                    &::after{
+                        @include after_lb(0, -5px, 100%, 1px, #eaeaea);
+                    }
+
+                    &::before{
+                        @include after_lb(0, -5px, 54px, 1px, #cf0511);
+                        z-index: 1;
+                    }
+                }
+                h4{
+                    @include fs(#3ca2a2, 18px, 500, $fhead);
+                    margin-top: 30px;
+                    margin-bottom: 5px;
+                }
+                .lol{
+                    position: relative;
+                    margin-top: 32px;
+                    &::after{
+                        @include after_lt(0, -15px, 100%, 1px, #eaeaea);
+                    }
+                }
+                p{
+                    @include fs($head, 13px, 400, $fhead);
+                    line-height: 20px;
+                    margin-bottom: 25px;
+                 
+                }
+
+                a{
+                    @include fs($head, 16px, 400, $fhead);
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #cf0511;
+                    }
+                }
+
+                
+            }
+
+            .service_col2{
+                width: 30%;
+                h2{
+                    @include fs($head, 29px, 500, $fhead);
+                    margin-bottom: 25px;
+                    position: relative;
+                    &::after{
+                        @include after_lb(0, -5px, 100%, 1px, #eaeaea);
+                    }
+                    &::before{
+                        @include after_lb(0, -5px, 54px, 1px, #cf0511);
+                        z-index: 1;
+                    }
+                }
+
+                p{
+                    @include fs($head, 13px, 400, $fhead);
+                    margin-bottom: 10px;
+                }
+
+                .last{
+                    margin-bottom: 50px;
+                }
+
+                .tik{
+                    color: #cf0511;
+                }
+
+                a{
+                    @include fs($head, 16px, 400, $fhead);
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #cf0511;
+                    }
+                }
+
+                .photo_row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .photo_col{
+                        width: 45%;
+                        .col_row{
+                            margin-bottom: 15px;
+                            border: 4px solid #dfece6;
+                            img{
+                                width: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+/*=============================================================
+                    Service part end
+===============================================================*/

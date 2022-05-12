@@ -1,0 +1,50 @@
+@import '../mixins/mixins';
+@import '../variables/variables';
+
+/*=============================================================
+                    About part start
+===============================================================*/
+#about{
+    padding: 40px 0 68px;
+    .container{
+        .about_row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .about_col{
+                width: 30%;
+                text-align: center;
+                h2{
+                    @include fs($shead, 24px, 500, $fhead);
+                    margin-bottom: 18px;
+                }
+
+                img{
+                    width: 140px;
+                }
+
+                p{
+                    margin-top: 10px;
+                    @include fs($head, 13px, 400, $fhead);
+                    line-height: 20px;
+                    margin-bottom: 18px;
+                }
+
+                .copy{
+                    width: 15px;
+                }
+
+                a{
+                    @include fs(#92c7a3, 14px, 400, $fhead);
+                    transition: all linear .4s;
+                    &:hover{
+                        color: #cf0511;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=============================================================
+                    About part end
+===============================================================*/

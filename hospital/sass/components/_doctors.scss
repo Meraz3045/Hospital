@@ -1,0 +1,61 @@
+@import '../mixins/mixins';
+@import '../variables/variables';
+
+/*=============================================================
+                    Doctors part start
+===============================================================*/
+#doctors{
+    padding-bottom: 76px;
+    .container{
+        h2{
+            @include fs($head, 29px, 500, $fhead);
+            margin-bottom: 30px;
+            position: relative;
+            &::after{
+                @include after_lb(0, -8px, 100%, 1px, #eaeaea)
+            }
+
+            &::before{
+                @include after_lb(0, -8px, 54px, 1px, #cf0511);
+                z-index: 1;
+            }
+        }
+        .doctors_row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+
+            .doctors_col{
+                width: 30%;
+                .col_img{
+                    border: 5px solid #dfece6;
+                    img{
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+
+                .col_txt{
+                    h4{
+                        @include fs(#3ca2a2, 18px, 500, $fhead);
+                        margin: 16px 0 5px;
+                    }
+
+                    p{
+                        @include fs(#878787, 12px, 400, $fhead);
+                        
+                        span{
+                            display: block;
+                            color: #cf0511;
+                            margin-top: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*=============================================================
+                    Doctors part end
+===============================================================*/

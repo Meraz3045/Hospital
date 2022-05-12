@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family: 'myriad_pro regular';
+    src: url(../../myriad_pro/MYRIADPRO-REGULAR.OTF);
+}
+
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,65 @@
+@import '../mixins/mixins';
+@import '../variables/variables';
+
+/*=============================================================
+                    Footer part start
+===============================================================*/
+#footer{
+    padding-top: 23px;
+    .container{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                h2{
+                    @include fs(#3ba1a1, 29px, 500, $fhead);
+                    margin: 30px 18px;
+                }
+            }
+        }
+
+        .footer_top{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 44px;
+            .footer_top_col{
+                width: 22%;
+                h3{
+                    @include fs(#3ba1a1, 18px, 500, $fhead);
+                    margin: 20px 0 15px;
+                }
+
+                .arrow{
+                    color: #cf0511;
+                    margin-right: 3px;
+                }
+
+                p{
+                    margin-top: 8px;
+                    a{
+                        @include fs(#c6ded9, 12px, 400, $fhead);
+                        transition: all linear .3s;
+                        &:hover{
+                            color: #3ba1a1;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer_bottom{
+        padding: 16px 0;
+        background: #cf0511;
+        p{
+            @include fs(#c6ded9, 14px, 400, $fhead);
+            text-align: center;
+        }
+    }
+}
+/*=============================================================
+                    Footer part end
+===============================================================*/
